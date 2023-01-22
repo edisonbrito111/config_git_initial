@@ -1,107 +1,31 @@
-# Instalacion de Git y Github
+# Git
 
-![Instalacion Git con Homebrew](assets/img/git_logo.svg "Instalacion Git con Homebrew")
+*[Git](https://git-scm.com/)* es un *software* de control de versiones distribuido y descentralizado que permite a un equipo de desarrolladores trabajar sobre el mismo código.
 
-## Proceso de Configuracion de Git
+## Indice
 
-## Introducción
+---
 
-Este documento es una guia completa para una instalacion nueva del modulo de Git; desde el gestor de paquetes, Homebrew
+[Instalación](Git%20b4b71054ebda4636abebde5cc5959e7b/Instalacio%CC%81n%2031fa5be3774540dcb5fe581861617f7d.md)
 
-## Instalación
+[Interfaces gráficas](Git%20b4b71054ebda4636abebde5cc5959e7b/Interfaces%20gra%CC%81ficas%20d59e300dbf5d4e56841215519ab47c73.md)
 
-#### Download for macOS
+[Company Goals - 2019](Git%20b4b71054ebda4636abebde5cc5959e7b/Company%20Goals%20-%202019%205981f0c6834b4d8c926fdbdfec238285.md)
 
-There are several options for installing Git on macOS. Note that any non-source distributions are provided by third parties, and may not be up to date with the latest source release.
-Homebrew install homebrew if you don't already have it, then:
+[Employee Directory](Git%20b4b71054ebda4636abebde5cc5959e7b/Employee%20Directory%202583e0a12a62495d842013d4c8c5cff2.csv)
 
-![Instalacion Git con Homebrew](assets/img/Img01_Codigo-instalacion-Git.png "Instalacion Git con Homebrew")
+[Recent Press](Git%20b4b71054ebda4636abebde5cc5959e7b/Recent%20Press%20a5e1bce5125f432d9856c58a455ee12a.md)
 
-## Flujo básico
+## Policies
 
-El flujo de Git, consta de tres estados locales, es decir en la computadora donde se esta trabajando y uno más de forma remota cuando accedemos al codigo centralizado en plataformas como GitHub, Gitlab, Bitbucket, etc
+---
 
-Dichos estados son **_modified_**, **_staged_**, **_committed_** y **_remote_**
+[Vacation Policy](Git%20b4b71054ebda4636abebde5cc5959e7b/Vacation%20Policy%203a3023a653084155aa2bd5177b3668db.md)
 
-A cada uno de ellos le corresponde un área de trabajo:
+[Office Manual](Git%20b4b71054ebda4636abebde5cc5959e7b/Office%20Manual%20d4ba9c64e8784892a434f9afdcdb47a8.md)
 
-### **_1. Working Directory:_** Es el área correspondiente al estado **_modified_** y es la carpeta local de tu computadora donde almacenas los archivos de tu proyecto
+[Request Time Off ](Git%20b4b71054ebda4636abebde5cc5959e7b/Request%20Time%20Off%2038d7ca9ca4af48f2a3612f0aca761c86.md)
 
-### **_2. Staging Area:_** Es el área correspondiente al estado **_staged_** también se le llama index por que es el área donde git indexa y agrega los cambios realizados en los archivos previos a comprometerlos en su registro
+[Benefits Policies](Git%20b4b71054ebda4636abebde5cc5959e7b/Benefits%20Policies%201a5521c708b3402387f0fc6cd91f384e.md)
 
-### **_3. Local Repository:_** Es el área correspondiente al estado **_committed_**, donde los cambios ya se han registrado en el repositorio de git también se le llama **_HEAD_** por que indica en qué cambio se encuentra el puntero del repositorio
-
-### **_4. Remote Repository:_** Es el área correspondiente al estado **_remote_** y es el directorio remoto donde almacenamos los archivos del proyecto en alguna plataforma web como GitHub, GitLab, BitBucket. Git denomina **_origin_** al repositorio remoto
-
-## Para reemplazar la rama **_master_** por **_main_** en GitHub
-
-```
-# Paso 1
-# Crea la rama local main y pásale el historial de la rama master
-git branch -m master main
-
-
-# Paso 2
-# Haz un push de la nueva rama local main en el repositorio remoto de GitHub
-git push -u origin main
-
-
-# Paso 3
-# Cambia el HEAD actual a la rama main
-git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/main
-```
-
-## Paso 4
-
-Cambia la rama default de master a main en tu repositorio de GitHub
-
-Para hacerlo, sigue las instrucciones de este [Enlace](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/changing-the-default-branch)
-
-```
-# Paso 5
-# Elimina la rama master del repositorio remoto
-git push origin --delete master
-```
-
-## Para reemplazar la rama master por main en Git
-
-```
-git config --global init.defaultBranch main
-```
-
-## Ramas
-
-Una rama nos permite aislar una nueva funcionalidad en nuestro código que después podremos añadir a la versión principal.
-
-```
-# crear rama
-git branch nombre-rama
-
-# cambiar de rama
-git checkout nombre-rama
-
-# crear una rama y cambiarte a ella
-git checkout -b rama
-
-# eliminar rama
-git branch -d nombre-rama
-
-# eliminar ramas remotas
-git push origin --delete nombre-rama
-
-#eliminar rama (forzado)
-git branch -D nombre-rama
-
-# listar todas las ramas del repositorio
-git branch
-
-# lista ramas no fusionadas a la rama actual
-git branch --no-merged
-
-# lista ramas fusionadas a la rama actual
-git branch --merged
-
-# rebasar ramas
-git checkout rama-secundaria
-git rebase rama-principal
-```
+[Expense Policy](Git%20b4b71054ebda4636abebde5cc5959e7b/Expense%20Policy%201b247e631da34e6fa16dd10bbd2018aa.md)
