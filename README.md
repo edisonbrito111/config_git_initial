@@ -1,12 +1,12 @@
 # Git
 
-*[Git](https://git-scm.com/)* es un *software* de control de versiones distribuido y descentralizado que permite a un equipo de desarrolladores trabajar sobre el mismo código.
+_[Git](https://git-scm.com/)_ es un _software_ de control de versiones distribuido y descentralizado que permite a un equipo de desarrolladores trabajar sobre el mismo código.
 
 ## Indice
 
 ---
 
-[Instalación](Git%20b4b71054ebda4636abebde5cc5959e7b/Instalacio%CC%81n%2031fa5be3774540dcb5fe581861617f7d.md)
+[Instalación](Git%20b4b71054ebda4636abebde5cc5959e7b/Instalacion.md)
 
 [Interfaces gráficas](Git%20b4b71054ebda4636abebde5cc5959e7b/Interfaces%20gra%CC%81ficas%20d59e300dbf5d4e56841215519ab47c73.md)
 
